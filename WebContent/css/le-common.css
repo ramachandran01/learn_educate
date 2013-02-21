@@ -1,0 +1,23 @@
+.header {
+	background-color: #A2A3A5;
+}
+
+.footer {
+	clear: both;
+	text-align: center;
+	background-color: #9AA6B2
+}
+
+.content {
+	height: 600px;
+	width: 1200px;
+	float: left;
+	background-color: #E7E9EC
+}
+
+.navigation {
+	height: 600px;
+	width: 200px;
+	float: left;
+	background-color: #D7DBE0
+}
