@@ -1,0 +1,52 @@
+<!--?xml version="1.0" encoding="UTF-8"? -->
+<!DOCTYPE tiles-definitions PUBLIC
+	   "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+	   "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="baseLayout" template="/jsp/layout/simpleLayout.jsp">
+		<put-attribute name="title" value="Learn - Educate" />
+		<put-attribute name="header" value="/jsp/layout/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp" />
+	</definition>
+
+	<definition name="baseLayoutWithLeftPane" template="/jsp/layout/layoutWithLeftPane.jsp">
+		<put-attribute name="title" value="Learn - Educate" />
+		<put-attribute name="header" value="/jsp/layout/header.jsp" />
+		<put-attribute name="navigation" value="/jsp/layout/navigation.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp" />
+	</definition>
+
+	<definition name="welcome" extends="baseLayoutWithLeftPane">
+		<put-attribute name="title" value="Learn - Educate" />
+		<put-attribute name="body" value="/jsp/home.jsp" />
+	</definition>
+
+	<definition name="signup" extends="baseLayout">
+		<put-attribute name="title" value="Signup" />
+		<put-attribute name="body" value="/jsp/signup.jsp" />
+	</definition>
+
+	<definition name="listMyCourses" extends="baseLayoutWithLeftPane">
+		<put-attribute name="title" value="My Courses" />
+		<put-attribute name="body" value="/jsp/listCourses.jsp" />
+	</definition>
+
+	<definition name="viewCourse" extends="baseLayoutWithLeftPane">
+		<put-attribute name="title" value="View Course" />
+		<put-attribute name="body" value="/jsp/viewCourse.jsp" />
+	</definition>
+
+	<definition name="newCourse" extends="baseLayoutWithLeftPane">
+		<put-attribute name="title" value="New Course" />
+		<put-attribute name="body" value="/jsp/newCourse.jsp" />
+	</definition>
+
+	<definition name="diplayCreateModule" extends="baseLayoutWithLeftPane">
+		<put-attribute name="title" value="Module" />
+		<put-attribute name="body" value="/jsp/addModule.jsp" />
+	</definition>
+
+</tiles-definitions>
